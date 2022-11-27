@@ -1,0 +1,16 @@
+<script type=module>
+  import {bg,show}from"https://js.sabae.cc/egadv.js";
+await bg(1237);
+for(;;){
+ if(await show("クイズに挑戦しませんか?",["はい","いいえ"])=="はい"){
+ break; 
+}
+await show("そっか・・・ところでクイズに挑戦しませんか?");
+}
+const a=await show("何の鳥でしょう?",["カラス","ハクチョウ"]);
+if(a=="カラス"){
+ await show("ハズレ・・・");
+}else if(a=="ハクチョウ"){
+ await show("正解!");
+}
+</script>
